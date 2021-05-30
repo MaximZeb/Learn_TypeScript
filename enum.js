@@ -5,4 +5,11 @@ var Membership;
     Membership[Membership["Premium"] = 2] = "Premium";
 })(Membership || (Membership = {}));
 var membership = Membership.Standard;
+var membershipReverse = Membership[2];
 console.log(membership);
+var SocialMedia;
+(function (SocialMedia) {
+    SocialMedia["VK"] = "VK";
+    SocialMedia["facebook"] = "facebook";
+})(SocialMedia || (SocialMedia = {}));
+//# sourceMappingURL=enum.js.map
