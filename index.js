@@ -22,3 +22,42 @@ function DatePasport(seria, nomer) {
     }
     console.log("Date Pasport " + seria + ", " + nomer);
 }
+// class
+var Server = /** @class */ (function () {
+    function Server(name, ip) {
+        this.name = name;
+        this.ip = ip;
+        this.status = 'working';
+    }
+    Server.prototype.turnOn = function () {
+        this.status = 'working';
+    };
+    Server.prototype.turnOff = function () {
+        this.status = 'offline';
+    };
+    Server.prototype.getStatus = function () {
+        return this.status;
+    };
+    Server.Version = '1.0.3';
+    return Server;
+}());
+var server = new Server('localhost', 21342);
+var AnimalsHouse = /** @class */ (function () {
+    function AnimalsHouse(nameAnimals, age, addres) {
+        this.nameAnimals = nameAnimals;
+        this.age = age;
+        this.addres = addres;
+    }
+    AnimalsHouse.prototype.returnAnimal = function () {
+        return AnimalsHouse;
+    };
+    return AnimalsHouse;
+}());
+var animal = new AnimalsHouse('markiz', 23, "Wild Nature");
+var USER = {
+    name: 'Maksim',
+    age: 27,
+    result: function () {
+        console.log(this.name + ", " + this.age);
+    }
+};

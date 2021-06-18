@@ -27,3 +27,45 @@ function DatePasport (seria: number | string, nomer: number | string) {
     }
     console.log(`Date Pasport ${seria}, ${nomer}`);
 }
+
+// class
+class Server {
+    static Version = '1.0.3';
+
+    private status: string = 'working';
+
+    constructor(public name: string, protected ip: number) {}
+
+    public turnOn() {
+        this.status = 'working'
+    }
+    turnOff() {
+        this.status = 'offline'
+    }
+    getStatus(): string {
+        return this.status
+    }
+}
+const server: Server = new Server ('localhost', 21342);
+
+class AnimalsHouse {
+    constructor(public nameAnimals: string, public age: string | number, private addres: string) {
+    }
+    returnAnimal() {
+        return AnimalsHouse;
+    }
+}
+const animal: AnimalsHouse = new AnimalsHouse('markiz', 23, "Wild Nature");
+interface UserInterface {
+    name: string;
+    age: string | number;
+    result: () => void;
+    id?: any;
+}
+const USER: UserInterface = {
+    name: 'Maksim',
+    age: 27,
+    result() {
+        console.log(`${this.name}, ${this.age}`)
+    }
+}
