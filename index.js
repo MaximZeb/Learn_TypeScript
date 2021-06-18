@@ -61,3 +61,25 @@ var USER = {
         console.log(this.name + ", " + this.age);
     }
 };
+var User = /** @class */ (function () {
+    function User(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    User.prototype.sayHello = function () {
+        console.log("" + this.name);
+    };
+    return User;
+}());
+var Animal = /** @class */ (function () {
+    function Animal(nameAnimal) {
+        this.nameAnimal = nameAnimal;
+    }
+    Animal.prototype.result = function () {
+    };
+    return Animal;
+}());
+var aArrdfdsdf = [
+    { id: 1, name: 'mila', adress: 1234 },
+    { id: 1, name: 'mila', adress: 1234 }
+];

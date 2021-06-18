@@ -22,9 +22,6 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
-  <component name="ProblemsViewState">
-    <option name="selectedIndex" value="1" />
-  </component>
   <component name="ProjectId" id="1u53NnvZKTCGCUrmMEzJ6nQTKMx" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -54,7 +51,7 @@
       <updated>1623941598988</updated>
       <workItem from="1623941608768" duration="409000" />
       <workItem from="1623950982221" duration="2778000" />
-      <workItem from="1623999770983" duration="5844000" />
+      <workItem from="1623999770983" duration="8395000" />
     </task>
     <servers />
   </component>

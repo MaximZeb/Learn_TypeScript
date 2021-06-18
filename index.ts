@@ -69,3 +69,31 @@ const USER: UserInterface = {
         console.log(`${this.name}, ${this.age}`)
     }
 }
+
+interface SayHello {
+    sayHello: () => void;
+}
+class User implements SayHello {
+    constructor(private name: string, private age: number) {}
+    sayHello() {
+        console.log(`${this.name}`)
+    }
+}
+interface Name {
+    result: () => void;
+}
+class Animal implements Name {
+    constructor(private nameAnimal: string){}
+
+    result(): void {
+    }
+}
+interface Usere {
+    id: number
+    name: string
+    adress?: any
+}
+const aArrdfdsdf: Array<Usere> = [
+    {id: 1, name: 'mila', adress: 1234},
+    {id: 1, name: 'mila', adress: 1234}
+];
